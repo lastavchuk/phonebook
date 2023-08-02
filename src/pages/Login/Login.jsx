@@ -6,10 +6,10 @@ import Section from 'components/Section/Section';
 import Container from 'components/Container/Container';
 import StyledFormAddContact from 'components/Forms/FormAddContact.styled';
 
-import { loginUserThunk } from 'redux/operations';
 import { selectUserError } from 'redux/selectors';
 import Notification from 'components/Notification/Notification';
 import { toast } from 'react-toastify';
+import { loginUserThunk } from 'redux/auth/userOperations';
 
 export default function Login() {
     const dispatch = useDispatch();

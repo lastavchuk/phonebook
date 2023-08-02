@@ -4,7 +4,7 @@ import SharedLayout from 'layout/SharedLayout';
 import { lazy, useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { Navigate, Route, Routes } from 'react-router-dom';
-import { refreshUserThunk } from 'redux/operations';
+import { refreshUserThunk } from 'redux/auth/userOperations';
 import { selectUserToken } from 'redux/selectors';
 
 const Home = lazy(() => import('../pages/Home/Home'));

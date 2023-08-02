@@ -4,7 +4,7 @@ import {
     logOutUserThunk,
     refreshUserThunk,
     registerUserThunk,
-} from './operations';
+} from './userOperations';
 
 function handlePending(state) {
     state.isLoading = true;

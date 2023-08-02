@@ -7,9 +7,9 @@ import Container from 'components/Container/Container';
 import Notification from 'components/Notification/Notification';
 import StyledFormAddContact from 'components/Forms/FormAddContact.styled';
 
-import { registerUserThunk } from 'redux/operations';
 import { selectUserError } from 'redux/selectors';
 import { toast } from 'react-toastify';
+import { registerUserThunk } from 'redux/auth/userOperations';
 
 export default function Register() {
     const dispatch = useDispatch();

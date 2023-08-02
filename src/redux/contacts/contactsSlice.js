@@ -3,7 +3,7 @@ import {
     addContactThunk,
     deleteContactThunk,
     getAllContactThunk,
-} from './operations';
+} from './contactOperations';
 
 function handlePending(state) {
     state.isLoading = true;

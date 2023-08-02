@@ -1,13 +1,7 @@
 import { useEffect } from 'react';
 import { toast } from 'react-toastify';
-import { setFilter } from 'redux/filterSlice';
 import { useDispatch, useSelector } from 'react-redux';
 
-import {
-    addContactThunk,
-    deleteContactThunk,
-    getAllContactThunk,
-} from 'redux/operations';
 import { selectContacts, selectFilter, selectUserToken } from 'redux/selectors';
 
 import Filter from 'components/Filter/Filter';
@@ -17,6 +11,12 @@ import HeadTilte from 'components/HeadTilte/HeadTilte';
 import ContactList from 'components/Contacts/ContactList';
 import FormAddContact from 'components/Forms/FormAddContact';
 import Notification from 'components/Notification/Notification';
+import { setFilter } from 'redux/contacts/filterSlice';
+import {
+    addContactThunk,
+    deleteContactThunk,
+    getAllContactThunk,
+} from 'redux/contacts/contactOperations';
 
 export default function Contacts() {
     const token = useSelector(selectUserToken);
